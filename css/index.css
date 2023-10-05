@@ -1,0 +1,262 @@
+/* navbar */
+.nav {
+    background-color:   darkgrey;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    line-height: 30px;   
+}
+.nav p {
+    margin-right: 30px;
+}
+.nav ul {
+    display:flex;
+}
+.nav li {
+    margin-right: 20px;
+}
+
+/* konten 1 : HOME */
+.konten1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.konten1 .box {
+    flex: 1;
+    border: 0px;
+    background-color: white;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: "Inter-SemiBold", Helvetica;
+    flex-basis: calc(50% - 100px);
+  
+}
+.konten1 .box > h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+}
+.konten1 .box > h3 {
+    color: #B22727;
+    text-align: justify;
+}
+.konten1 .box > img {
+    width: 300px;
+    padding-right: 50px;
+}
+
+/* konten 2 : carousel */
+.konten2 {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+    transition: 2s;
+}
+.images img {
+    width: 100%;  
+}
+#slide-1:target ~ .images {
+    margin-left: 0px;
+}
+#slide-2:target ~ .images {
+    margin-left: -100%;
+}
+#slide-3:target ~ .images {
+    margin-left: -200%;
+}
+#slide-4:target ~ .images {
+    margin-left: -300%;
+}
+.navigation a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #dedede;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.navigation a:hover {
+    background-color: black;
+}
+
+.navigation {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+/* konten 3 : LINE TRACKING SHIPPMENT */
+.konten3 {
+    background-color:  darkgray;
+    color:black;
+    font-size: 20px;
+    width: 100%;
+    line-height: 75px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* konten 4 : TRACKING SHIPPMENT */
+.konten4 {
+    background-image: url('./gambar/kapal.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.konten4 .box {
+    margin: 30px;
+    border-radius: 30px;
+    background-color: #FFDECC;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.konten4 .box > button {
+    text-align: center;
+    background-color: #FF3535;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+.konten4 button:hover {
+    background-color: black;
+}
+
+/* konten 5 : LINE COMPANY PROFILE */
+.konten5 {
+    background-color:  darkgray;
+    color:black;
+    font-size: 20px;
+    width: 100%;
+    line-height: 75px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* konten 6 : COMPANY PROFILE */
+.konten6 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-image: url('./gambar/kargo.jpg');
+}
+.konten6 .box {
+    margin: 30px;
+    border-radius: 30px;
+    background-color: #FFDECC;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* konten 7 : LINE CONTACT US */
+.konten7 {
+    background-color:  darkgray;
+    color:black;
+    font-size: 20px;
+    width: 100%;
+    line-height: 75px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* konten 8 : CONTACT US */
+.konten8 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.konten8 .box {
+    flex:1;
+    flex-basis: calc(33%-100px);
+
+}
+.konten8 .box > form {
+    border-radius: 30px;
+    background-color:  #FFDECC;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    margin: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.konten8 .komentar {
+    border-radius: 30px;
+    background-color:  #FFDECC;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    margin: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* konten 9 : LINE MEET OUR TEAM */
+.konten9 {
+    background-color:  darkgray;
+    color:black;
+    font-size: 20px;
+    width: 100%;
+    line-height: 75px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* konten 10 : MEET OUR TEAM */
+.konten10 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.konten10 .box {
+    flex: 1;
+    flex-basis: calc(33% - 100px);
+    text-align: center;
+    border-radius: 30px;
+    background-color:#F90000;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+.konten10 .box img {
+    border-radius: 30px;
+    align-items: center;  
+}

@@ -1,0 +1,42 @@
+body {
+    background-color: lightgrey;
+}
+.nav {
+    background-color:  rgba(79, 79, 71, 0.865);
+    color: white;
+    flex-basis: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.konten {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+}
+.konten .kotaklogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    padding: 30px;
+    color: #B22727;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.kotaklogin .box {
+    display: flex;
+    background-color: #B22727;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+}
