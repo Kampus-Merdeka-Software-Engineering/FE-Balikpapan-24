@@ -1,7 +1,7 @@
 /* navbar */
 .nav {
-    background-color:   darkgrey;
-    color: black;
+    background-color:   #B22727;
+    color: white;
     display: flex;
     justify-content: space-between;
     position: sticky;
@@ -103,8 +103,8 @@
 
 /* konten 3 : LINE TRACKING SHIPPMENT */
 .konten3 {
-    background-color:  darkgray;
-    color:black;
+    background-color: #B22727;
+    color: white;
     font-size: 20px;
     width: 100%;
     line-height: 75px;
@@ -115,7 +115,7 @@
 
 /* konten 4 : TRACKING SHIPPMENT */
 .konten4 {
-    background-image: url('./gambar/kapal.png');
+    background-image: url('../gambar/kapal.png');
     background-size: cover; 
     background-repeat: no-repeat;
     display: flex;
@@ -135,10 +135,11 @@
 }
 .konten4 .box > button {
     text-align: center;
-    background-color: #FF3535;
+    background-color: #B22727;
     padding: 15px;
     color: white;
     cursor: pointer;
+    border-color:  #B22727;
 }
 .konten4 button:hover {
     background-color: black;
@@ -146,8 +147,8 @@
 
 /* konten 5 : LINE COMPANY PROFILE */
 .konten5 {
-    background-color:  darkgray;
-    color:black;
+    background-color: #B22727;
+    color: white;
     font-size: 20px;
     width: 100%;
     line-height: 75px;
@@ -163,7 +164,7 @@
     flex-wrap: wrap;
     background-size: cover; 
     background-repeat: no-repeat;
-    background-image: url('./gambar/kargo.jpg');
+    background-image: url('../gambar/kapal.png');
 }
 .konten6 .box {
     margin: 30px;
@@ -176,11 +177,15 @@
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.konten6 .box > img {
+    align-content: center;
+    align-items: center;
+}
 
-/* konten 7 : LINE CONTACT US */
+/* konten 7 : LINE TELL ME ABOUT FILDEA */
 .konten7 {
-    background-color:  darkgray;
-    color:black;
+    background-color:  #B22727;
+    color: white;
     font-size: 20px;
     width: 100%;
     line-height: 75px;
@@ -188,7 +193,7 @@
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* konten 8 : CONTACT US */
+/* konten 8 : TELL ME ABOUT FILDEA */
 .konten8 {
     display: flex;
     justify-content: space-between;
@@ -219,11 +224,30 @@
     margin: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.konten8 .komentar > ul {
+    list-style-type: none;
+    padding: 0;
+}
+.konten8 .komentar > li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.konten8 button:hover {
+    background-color: black;
+}
+#list-comment {
+    text-align: left;
+    overflow-y: scroll;
+    height: 200px;
+}
 
 /* konten 9 : LINE MEET OUR TEAM */
 .konten9 {
-    background-color:  darkgray;
-    color:black;
+    background-color:   #B22727;
+    color:  white;
     font-size: 20px;
     width: 100%;
     line-height: 75px;
@@ -246,7 +270,7 @@
     flex-basis: calc(33% - 100px);
     text-align: center;
     border-radius: 30px;
-    background-color:#F90000;
+    background-color: #B22727;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     padding: 20px;
