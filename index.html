@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav">
+        <ul style="list-style: none">
+            <li><a href="#home" style="text-decoration: none; color: white;">Home</a></li>
+            <li><a href="#about_us" style="text-decoration: none; color:  white;">About Us</a></li>
+            <li><a href="#track" style="text-decoration: none; color: white;">Track</a></li>
+            <li><a href="#our_team" style="text-decoration: none; color:  white;">Our Team</a></li>
+            <li><a href="#contact_us" style="text-decoration: none; color: white;">Contact Us</a></li>
+        </ul>
+        <p><a href="./html/login.html" style="text-decoration: none; color: white;">Login</a></p>
+    </div>
+    <!-- isi konten -->
+    <div class="isikonten">
+        <!-- konten 1 : HOME -->
+        <div class="konten1">
+            <div class="box">
+                <h1 id="home">EXPRESS YOUR ONLINE BUSSINESS WITH FILDEA</h1>
+                <h3>FILDEA is an industrial company operating in the field of goods delivery services in Indonesia. Being a high-performance delivery service, FILDEA can provide the best experience in sending client packages.</h3>
+            </div>
+            <div class="box">
+                <img src="./gambar/kurirpaket2.png" alt="gambar kurir paket" style="transition: 2s;">
+            </div>
+        </div>
+        <!-- konten 2 : CAROUSEL -->
+        <div class="konten2">
+            <div class="slides">
+                <span id="slide-1"></span>
+                <span id="slide-2"></span>
+                <span id="slide-3"></span>
+                <span id="slide-4"></span>
+                <div class="images">
+                    <img src="./gambar/home2.png" alt="home_page_2">
+                    <img src="./gambar/home1.png" alt="home_page_1">
+                    <img src="./gambar/home3.jpeg" alt="home_page_3" >
+                    <img src="./gambar/home4.jpeg" alt="home_page_4" >         
+                </div>
+            </div>
+            <!--navigation slider-->
+            <div class="navigation">
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+            </div>  
+        </div>
+        <!-- konten 3 : LINE TRACKING SHIPPMENT -->
+        <div class="konten3" id="track">
+            Tracking Shippment
+        </div>
+        <!-- konten 4 : TRACKING SHIPPMENT -->
+        <div class="konten4">
+            <div class="box">
+                <h2>Track & Location</h2>
+                <form>
+                    <label for="noresi">Receipt Number :</label><br>
+                    <input type="number" id="user_input" name="noresi" placeholder="Masukkan No Resi Anda" required><br><br> 
+                    <label for="location">Location :</label><br>
+                    <p id="lokasi"></p>  
+                </form>
+                <button onclick="func_click()" id="demo">TRACK</button>
+            </div>
+        </div>
+        <!-- konten 5 : LINE COMPANY PROFILE -->
+        <div class="konten5" id="about_us">
+            COMPANY PROFILE
+        </div>
+        <!-- konten 6 : COMPANY PROFILE -->
+        <div class="konten6">
+            <div class="box">
+                <h1 style="color: red">We Are FILDEA</h1>
+                <p>We are a company engaged in the field of cargo delivery services. <br> The name Fildea is derived from the names of the six website developers, <br> namely Fata, Irma, Laura, Defina, Echa and Tahlia. <br> Our mission and vision are to provide convenience for users who want to <br> send their items quickly and hassle-free through the services we offer.</p>
+            </div>
+            <div class="box">
+            <img src="./gambar/logo fildea.png" alt="GAMBAR LOGO FILDEA" width="250px" height="200px">    
+            </div>
+        </div>
+        <!-- konten 7 : LINE TELL ME ABOUT FILDEA -->
+        <div class="konten7" id="contact_us">
+            TELL ME ABOUT FILDEA
+        </div>
+        <!-- konten 8 : TELL ME ABOUT FILDEA -->
+        <div class="konten8">
+            <div class="box">
+            <img src="./gambar/contactus.png" width="500px">    
+            </div>
+            <div class="box">
+                <form>
+                    <h2>User Comment</h2>
+                    <input type="text" name="name" id="name" placeholder="Name" required> <br><br>
+                    <input type="email" name="email" id="email" placeholder="Email" required> <br><br>
+                    <input type="text" name="message" id="message" placeholder="Beri kami ulasan berdasarkan pengalaman anda memakai jasa kirim kami" required> <br><br>
+                    <input type="button" onclick="addNewComment()" value="SEND MESSAGE" style="background-color:  #B22727; color: white; padding: 10px; cursor: pointer; border-color:  #B22727;" >   
+                </form>
+            </div>
+            <div class="box">
+                <div class="komentar">
+                    <h3>What They Say About Us</h3>
+                    <ul id="list-comment"></ul>
+                </div>
+            </div>
+        </div>
+        <!-- konten 9 : LINE MEET OUR TEAM -->
+        <div class="konten9" id="our_team">
+            MEET OUR TEAM
+        </div>
+        <!-- konten 10 : MEET OUR TEAM -->
+        <div class="konten10">
+            <div class="box">
+                <img src="./gambar/Defina.jpg" width="250px" height="200px">    
+                <br><p id="nama_anggota_1"></p><p id="role_anggota_1"></p><p id="prodi_anggota_1"></p> 
+            </div>
+            <div class="box">
+                <img src="./gambar/fata.jpeg" width="250px" height="200px"> 
+                <br><p id="nama_anggota_2"></p><p id="role_anggota_2"></p><p id="prodi_anggota_2"></p> 
+            </div>
+            <div class="box">
+                <img src="./gambar/Laura.jpg" width="250px" height="200px"> 
+                <br><p id="nama_anggota_3"></p><p id="role_anggota_3"></p><p id="prodi_anggota_3"></p> 
+            </div>
+            <div class="box">
+                <img src="./gambar/irma.jpeg" width="250px" height="200px"> 
+                <br><p id="nama_anggota_4"></p><p id="role_anggota_4"></p><p id="prodi_anggota_4"></p> 
+            </div>
+            <div class="box">
+                <img src="./gambar/Echa.jpg" width="250px" height="200px"> 
+                <br><p id="nama_anggota_5"></p><p id="role_anggota_5"></p><p id="prodi_anggota_5"></p> 
+            </div>
+            <div class="box">
+                <img src="./gambar/Thalia.jpg" width="250px" height="200px"> 
+                <br><p id="nama_anggota_6"></p><p id="role_anggota_6"></p><p id="prodi_anggota_6"></p> 
+            </div>
+            
+        </div>
+        </div>
+
+    </div>
+    <script src="./js/nama_anggota.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
