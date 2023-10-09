@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'https://shy-plum-abalone-veil.cyclic.app';
 
 let lokasi = document.getElementById("lokasi");
 
